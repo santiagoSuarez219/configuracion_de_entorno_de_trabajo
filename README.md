@@ -45,8 +45,16 @@ ssh-keygen -t rsa -b 4096 -C "tu@email.com"
 idf.py build
 ```
 
-## Instalacion de Node JS y NPM
+## Instalacion de Docker en WSL
+1. Descargar el instalador desde la documentacion oficial de docker [aqui](https://docs.docker.com/desktop/install/windows-install/)
+2. Ejecutar el instalador.
+3. Cuando ya tienes instalado Docker Desktop dentro de tus programas debes abrirlo y debes asegurarte que la opción “Use the WSL 2 based engine” está habilitada:
 
+![01](https://i.imgur.com/COPXJpw.png)
+
+4. Luego debes ir a la opción “Resources” y luego a “WSL Integration” y asegurarte que la opción “Enable integration with my default WSL distro” está habilitada:
+
+![02](https://i.imgur.com/g20OhlL.png)
 
 
 
