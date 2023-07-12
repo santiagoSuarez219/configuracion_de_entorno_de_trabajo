@@ -7,6 +7,20 @@
 git config --global user.name "Usuario"
 git config --global user.email "correo@gmail.com"
 ```
+### Configuracion de SSH
+1. Generar llave SSH
+```bash
+ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+```
+2. Activar servidor de SSH
+```bash
+eval $(ssh-agent - s)
+```
+3. Incluir SSH
+```bash
+ssh-add ~/.ssh/id_rsa
+```
+
 ## Instalacion de Node JS y NPM
 
 [Instalacion](https://github.com/nvm-sh/nvm#installing-and-updating)
