@@ -1,4 +1,4 @@
-# Configuracion entorno de trabajo de Linux
+# Configuracion entorno de trabajo
 
 ## Configuracion de git
 
@@ -32,24 +32,15 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 Es posible, que necesites cerrar la terminal y abrirla de nuevo para poder ejecutar el siguiente comando:
 
 ```bash
-nvm install lts
+nvm install version-node-lts
 ```
 
 ## Instalacion de docker
 
 [Instalacion](https://docs.docker.com/engine/install/ubuntu/)
 
-# Configuracion entorno de trabajo de Windows
 
-# Git 
-## Configuracion SSH 
-1. Generar llave SSH
-```bash
-ssh-keygen -t rsa -b 4096 -C "tu@email.com"
-```
-2. Agregar la llave publica a GitHub
-
-## Instalacion de ESP-IDF
+## Instalacion de ESP-IDF en Windows
 1. Descargar el instalador desde la documentacion oficial de espressif [aqui](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html)
 2. Ejecutar el instalador.
 3. Ejecute la powershell desde la terminal
