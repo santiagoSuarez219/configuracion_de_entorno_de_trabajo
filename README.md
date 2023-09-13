@@ -9,44 +9,68 @@ sudo apt install -y python3-pip
 pip3 -V
 sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
 ```
-## Instalando Git
-1. `sudo apt update`
-2. `sudo apt-get install git-all`
-3. `git --version`
 
-## Configuracion de git
-
-1. Configurar usuario y correo
+## Instalacion de git
+1. Abre WSL y ejecuta el siguiente comando
 ```bash
-git config --global user.name "Usuario"
-git config --global user.email "correo@gmail.com"
+sudo apt-get install git-all
 ```
-### Configuracion de SSH
-1. Generar llave SSH
+2. Una vez instalado, debes configurar tu usuario y correo electronico
+```bash
+git config --global user.name "Tu nombre"
+git config --global user.email "Tu correo"
+```
+3. Para verificar que se haya instalado correctamente, ejecuta el siguiente comando
+```bash
+git --version
+```
+
+## Creacion de una cuenta en GitHub
+1. Ingresa a la pagina oficial de GitHub
+2. Crea una cuenta
+
+## Configuracion de SSH
+1. Abre WSL y ejecuta el siguiente comando
 ```bash
 ssh-keygen -t rsa -b 4096 -C "tu@email.com"
 ```
-2. Activar servidor de SSH
+2. Una vez ejecutado el comando, se te pedira que ingreses una ruta para guardar la llave, puedes dejar la ruta por defecto o bien, ingresar una ruta personalizada
+3. Se te pedira que ingreses una contraseña, puedes dejarla en blanco o bien, ingresar una contraseña
+4. Una vez creada la llave, debes ejecutar el siguiente comando
 ```bash
-eval $(ssh-agent - s)
+eval "$(ssh-agent -s)"
 ```
-3. Incluir SSH
+5. Ahora, debes agregar la llave a ssh
 ```bash
 ssh-add ~/.ssh/id_rsa
 ```
+6. Para obtener la llave, debes ejecutar el siguiente comando
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+7. Copia la llave y pegala en tu cuenta de GitHub
 
-## Instalacion de Node JS y NPM
-
-[Instalacion](https://github.com/nvm-sh/nvm#installing-and-updating)
-
+## Instalacion de Node JS con NVM
+1. Abre WSL y ejecuta el siguiente comando
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
-
-Es posible, que necesites cerrar la terminal y abrirla de nuevo para poder ejecutar el siguiente comando:
-
+2. Una vez instalado, debes cerrar y abrir WSL
+3. Para verificar que se haya instalado correctamente, ejecuta el siguiente comando
 ```bash
-nvm install version-node-lts
+nvm --version
+```
+4. Ahora, debes instalar la version de Node JS que desees, en este caso, se instalara la version 18.17.0
+```bash
+nvm install 18.17.0
+```
+5. Para verificar que se haya instalado correctamente, ejecuta el siguiente comando
+```bash
+node --version
+```
+6. Debes verificar la version de npm que se instalo, para ello, ejecuta el siguiente comando
+```bash
+npm --version
 ```
 
 ## Instalacion de docker
