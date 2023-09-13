@@ -1,5 +1,14 @@
 # Configuracion entorno de trabajo
 
+## Instalando Python y PIP
+```bash
+sudo apt update
+sudo apt -y upgrade
+python3 -V
+sudo apt install -y python3-pip
+pip3 -V
+sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+```
 ## Configuracion de git
 
 1. Configurar usuario y correo
