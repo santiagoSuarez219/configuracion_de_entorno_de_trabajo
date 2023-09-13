@@ -9,6 +9,11 @@ sudo apt install -y python3-pip
 pip3 -V
 sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
 ```
+## Instalando Git
+1. `sudo apt update`
+2. `sudo apt-get install git-all`
+3. `git --version`
+
 ## Configuracion de git
 
 1. Configurar usuario y correo
