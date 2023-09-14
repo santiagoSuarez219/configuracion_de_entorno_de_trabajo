@@ -72,7 +72,10 @@ node --version
 ```bash
 npm --version
 ```
-
+## Instalacion de Nest JS
+```bash
+npm install -g @nestjs/cli
+```
 ## Instalacion de docker
 
 [Instalacion](https://docs.docker.com/engine/install/ubuntu/)
