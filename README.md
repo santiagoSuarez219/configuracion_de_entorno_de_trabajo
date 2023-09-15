@@ -76,6 +76,12 @@ npm --version
 ```bash
 npm install -g @nestjs/cli
 ```
+
+## Instalacion de Angular CLI
+```bash
+npm install -g @angular/cli
+```
+
 ## Instalacion de docker
 
 [Instalacion](https://docs.docker.com/engine/install/ubuntu/)
