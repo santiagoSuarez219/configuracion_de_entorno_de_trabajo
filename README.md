@@ -108,6 +108,11 @@ ng version
 ng g c components/component-name
 ```
 
+### Servicios en angular
+```bash
+ng g s test-name
+```
+
 ## Instalacion de docker
 [Instalacion](https://docs.docker.com/engine/install/ubuntu/)
 
