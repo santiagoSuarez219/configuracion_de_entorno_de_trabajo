@@ -9,7 +9,6 @@ sudo apt install -y python3-pip
 pip3 -V
 sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
 ```
-
 ## Instalacion de git
 1. Abre WSL y ejecuta el siguiente comando
 ```bash
@@ -82,10 +81,35 @@ npm install -g @nestjs/cli
 npm install -g @angular/cli
 ```
 
+### Creacion de un proyecto de angular
+```bash
+ng new my-project
+```
+
+### Correr un proyecto de angular en ambiente de desarrollo
+```bash
+ng serve
+```
+Lanzar servidor y abrir el navegador por defecto automáticamente:
+```bash
+ng serve -o
+```
+Angular utiliza por defecto el puerto 4200. Si quieres utilizar otro, podemos hacer:
+```bash
+ng serve --port=3500
+```
+
+Finalmente, si quieres analizar la versión de Angular y la versión de todas las dependencias instaladas, puedes hacer:
+```bash
+ng version
+```
+### Componentes en angular
+```bash
+ng g c components/component-name
+```
+
 ## Instalacion de docker
-
 [Instalacion](https://docs.docker.com/engine/install/ubuntu/)
-
 
 ## Instalacion de ESP-IDF en Windows
 1. Descargar el instalador desde la documentacion oficial de espressif [aqui](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/windows-setup.html)
@@ -107,6 +131,27 @@ idf.py build
 4. Luego debes ir a la opción “Resources” y luego a “WSL Integration” y asegurarte que la opción “Enable integration with my default WSL distro” está habilitada:
 
 ![02](https://i.imgur.com/g20OhlL.png)
+
+## Acceder a un servidor local hosteado en WSL 2.0 por medio de dispositivos de la misma red local
+1. En la terminal de WSL vas a escribir lo siguiente y vas a copiar tu direccion IPv4
+```bash
+ifconfig
+```
+2. Luego ejecutaras la terminal de windows "PowerShell" como administrador
+3. Dentro de la PS escribiras el siguiente comando
+```bash
+netsh interface portproxy add v4tov4 listenport=[Puerto del servidor] listenaddress=0.0.0.0 connectport=[Puerto del servidor] connectaddress=[Tu dirección IPv4]
+```
+4. Para finalizar, debemos habilitar estos puertos en el firewall de Windows
+  1. Firewall de Windows Defender
+  2. Configuracion Avanzada
+  3. Reglas de entrada (Lateral izquierda)
+  4. Nueva regla (Lateral derecha)
+  5. Puerto
+  6. TCP y puertos locales especificos (Puerto)
+  7. Nombre: WSL
+  8. Finalizar
+5. ahora podremos acceder a nuestro servidor local desde cualquier dispositivo que este dentro de la misma red local. Cabe aclarar que la dirección IPv4 de la maquina WSL se cambia cada vez que reiniciamos el PC. Lo único de que debemos de hacer es volver a realizar los pasos 1, 2 y 3 con la nueva dirección IPv4 que se le asigno a la maquina WSL.
 
 
 
