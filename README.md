@@ -158,5 +158,13 @@ netsh interface portproxy add v4tov4 listenport=[Puerto del servidor] listenaddr
   8. Finalizar
 5. ahora podremos acceder a nuestro servidor local desde cualquier dispositivo que este dentro de la misma red local. Cabe aclarar que la dirección IPv4 de la maquina WSL se cambia cada vez que reiniciamos el PC. Lo único de que debemos de hacer es volver a realizar los pasos 1, 2 y 3 con la nueva dirección IPv4 que se le asigno a la maquina WSL.
 
+# Herramientas de IA y otras
+## Generadores de codigo
+1. [Phind](https://www.phind.com/)
+
+## Creacion de paginas Web
+1. [Dora](https://www.dora.run/ai)
+2. [Wishpond](https://www.wishpond.com/ai/)
+
 
 
