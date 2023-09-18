@@ -82,6 +82,52 @@ nest new <project-name>
 cd <project-name>
 ```
 
+### Correr un proyecto de Nest en ambiente de desarrollo
+```bash
+npm run start:dev
+```
+
+### Creacion de controladores 
+```bash
+nest g cor controllers/categories --flat
+```
+
+### Creacion de servicios
+```bash 
+nest g s <service-name> --flat
+```
+
+### Creacion de modulos 
+```bash
+nest g mo <module-name>
+```
+
+### Paquetes mas usados en proyectos de Nest
+1. Validacion de parametros con class-validator
+```bash
+npm i class-validator class-transformer
+```
+2. Mapped Types para DTOs
+```bash
+npm i @nestjs/mapped-types
+```
+3. Configuracion de variables de entorno
+```bash
+npm install --save @nestjs/config
+```
+4. Validacion de esquemas con Joi
+```bash
+npm instal joi --save
+```
+5. Documentacion de API con Swagger
+```bash
+npm install --save @nestjs/swagger swagger-ui-express
+```
+6. Base de datos NoSQL con MongoDB
+```bash
+npm install --save @nestjs/mongoose mongoose
+```
+
 ## Instalacion de Angular CLI
 ```bash
 npm install -g @angular/cli
