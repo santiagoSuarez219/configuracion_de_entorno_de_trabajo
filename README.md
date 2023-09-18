@@ -76,6 +76,12 @@ npm --version
 npm install -g @nestjs/cli
 ```
 
+### Creacion de un proyecto de Nest
+```bash
+nest new <project-name>
+cd <project-name>
+```
+
 ## Instalacion de Angular CLI
 ```bash
 npm install -g @angular/cli
