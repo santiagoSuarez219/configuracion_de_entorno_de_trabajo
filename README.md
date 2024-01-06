@@ -194,6 +194,8 @@ idf.py build
 ```bash
 ifconfig
 ```
+![image](https://github.com/santiagoSuarez219/configuracion_de_entorno_de_trabajo/assets/113563666/8ee4844a-589f-488a-8af4-fb0fcde88a5d)
+
 2. Luego ejecutaras la terminal de windows "PowerShell" como administrador
 3. Dentro de la PS escribiras el siguiente comando
 ```bash
